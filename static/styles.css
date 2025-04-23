@@ -1,0 +1,157 @@
+/* Global styles */
+body {
+    font-family: 'Helvetica Neue', sans-serif; /* Set font for the entire body */
+    line-height: 1.6; /* Set line height for better readability */
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+    background-color: #000000; /* Set dark background color */
+}
+
+/* Container for centering the content */
+.container {
+    max-width: 800px; /* Limit maximum width of the container */
+    margin: auto; /* Center the container horizontally */
+    padding: 2rem; /* Add padding around the content */
+}
+
+/* Main header styles */
+h1 {
+    font-size: 2.5rem; /* Set font size for main heading */
+    font-weight: bold; /* Set font weight to bold */
+    color: #000000; /* Set text color to black */
+    margin-bottom: 1.5rem; /* Add margin below the heading */
+}
+
+/* Subheader styles */
+h2 {
+    font-size: 1.5rem; /* Set font size for subheadings */
+    font-weight: 600; /* Set font weight to semi-bold */
+    color: #000000; /* Set text color to black */
+    margin-bottom: 1rem; /* Add margin below the subheading */
+}
+
+/* Form container styling */
+.form-container {
+    background-color: rgb(191, 191, 241); /* Set background color for the form */
+    padding: 1.5rem; /* Add padding inside the form container */
+    border-radius: 0.5rem; /* Rounded corners for the form */
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1); /* Light shadow for 3D effect */
+}
+
+/* Form group styling for spacing between form fields */
+.form-group {
+    margin-bottom: 1rem; /* Add margin below each form group */
+}
+
+/* Label styling */
+label {
+    display: block; /* Make label a block element */
+    color: #4a5568; /* Set label text color */
+    font-weight: 500; /* Set font weight */
+    margin-bottom: 0.5rem; /* Add margin below the label */
+}
+
+/* Styling for input and textarea fields */
+input[type="date"],
+textarea {
+    width: 100%; /* Make input and textarea take full width of the container */
+    padding: 0.5rem 0.75rem; /* Add padding inside the fields */
+    border: 1px solid #cbd5e0; /* Add border color */
+    border-radius: 0.375rem; /* Rounded corners for the fields */
+    outline: none; /* Remove the default focus outline */
+    transition: border-color 0.3s ease; /* Smooth transition for border color */
+}
+
+/* Focus state styling for input and textarea fields */
+input[type="date"]:focus,
+textarea:focus {
+    border-color: #4299e1; /* Change border color on focus */
+    box-shadow: 0 0 0 2px rgba(66, 153, 225, 0.4); /* Add shadow effect on focus */
+}
+
+/* Submit button styling */
+.submit-btn {
+    width: 100%; /* Make the button take full width */
+    background-color: #4299e1; /* Set background color */
+    color: white; /* Set text color to white */
+    padding: 0.5rem; /* Add padding inside the button */
+    border-radius: 0.375rem; /* Rounded corners for the button */
+    border: none; /* Remove default border */
+    cursor: pointer; /* Change cursor to pointer on hover */
+    transition: background-color 0.3s ease; /* Smooth transition for background color */
+}
+
+/* Submit button hover effect */
+.submit-btn:hover {
+    background-color: #2b6cb0; /* Change background color on hover */
+}
+
+/* Container for the list of journal entries */
+.entries-container {
+    margin-top: 2rem; /* Add margin above the entries container */
+}
+
+/* Style for the journal entries list */
+#journal-list {
+    list-style-type: none; /* Remove default list bullet points */
+    padding: 0; /* Remove padding around the list */
+}
+
+/* Style for each journal entry in the list */
+#journal-list li {
+    display: flex; /* Use flexbox to arrange the content */
+    justify-content: space-between; /* Align content to both ends */
+    align-items: center; /* Vertically center content */
+    background-color: rgb(191, 191, 241); /* Set background color for each entry */
+    padding: 1rem; /* Add padding inside each list item */
+    border-radius: 0.375rem; /* Rounded corners for each entry */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05); /* Light shadow for each entry */
+}
+
+/* Add spacing between consecutive journal entries */
+#journal-list li + li {
+    margin-top: 1rem; /* Add margin above each entry except the first one */
+}
+
+/* Flexbox setup for journal entry content */
+#journal-list .entry {
+    flex-grow: 1; /* Allow entry content to take up available space */
+}
+
+/* Styling for the buttons in each journal entry */
+#journal-list .buttons {
+    display: flex; /* Arrange buttons horizontally */
+    gap: 0.5rem; /* Add space between buttons */
+}
+
+/* General button styling */
+#journal-list button {
+    padding: 0.4rem 0.75rem; /* Add padding inside buttons */
+    border-radius: 0.375rem; /* Rounded corners for buttons */
+    border: none; /* Remove default border */
+    cursor: pointer; /* Change cursor to pointer on hover */
+    font-weight: 500; /* Set font weight */
+    transition: background-color 0.2s ease; /* Smooth transition for background color */
+}
+
+/* Edit button styling */
+#journal-list .edit-btn {
+    background-color: #edf2f7; /* Set background color for the edit button */
+    color: #2d3748; /* Set text color for the edit button */
+}
+
+/* Edit button hover effect */
+#journal-list .edit-btn:hover {
+    background-color: #e2e8f0; /* Change background color on hover */
+}
+
+/* Delete button styling */
+#journal-list .delete-btn {
+    background-color: #fed7d7; /* Set background color for the delete button */
+    color: #e53e3e; /* Set text color for the delete button */
+}
+
+/* Delete button hover effect */
+#journal-list .delete-btn:hover {
+    background-color: #feb2b2; /* Change background color on hover */
+}

@@ -1,0 +1,5 @@
+Create venv using:  python3.12 -m venv dailyjouranlenv
+
+Activate venv using: source dailyjouranlenv/bin/activate
+
+Most of the code comments was done using ChatGPT

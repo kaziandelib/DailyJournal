@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Character set declaration for proper encoding -->
+    <meta charset="UTF-8">
+    <!-- Ensures proper scaling on mobile devices -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Title of the page shown in the browser tab -->
+    <title>Diary</title>
+
+    <!-- Link to the external CSS file for styling -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+
+    <!-- Including the Tailwind CSS framework for utility-first styles -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Including the jQuery library from a CDN for AJAX and DOM manipulation -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body class="bg-gray-100"> <!-- Set background color for the body using Tailwind CSS -->
+
+    <!-- Main container div for centering content -->
+    <div class="container">
+        
+        <!-- Main header for the diary application -->
+        <h1>Entries</h1>
+
+        <!-- Form section for adding a new journal entry -->
+        <div class="form-container">
+            <h2>Add A New Entry</h2>
+            
+            <!-- Form for submitting new journal entries -->
+            <form id="journal-form">
+                
+                <!-- Form group for the date input -->
+                <div class="form-group">
+                    <label for="date">Date</label>
+                    <!-- Date input field with a required validation -->
+                    <input type="date" id="date" required>
+                </div>
+
+                <!-- Form group for the content textarea -->
+                <div class="form-group">
+                    <label for="content">Content</label>
+                    <!-- Textarea for journal content with a required validation -->
+                    <textarea id="content" rows="4" required></textarea>
+                </div>
+
+                <!-- Submit button to add a new entry -->
+                <button type="submit" class="submit-btn">Add Entry</button>
+            </form>
+        </div>
+
+        <!-- Section to display the list of journal entries -->
+        <div class="entries-container">
+            <h2>Your Journal Entries</h2>
+            <!-- Unordered list where journal entries will be appended -->
+            <ul id="journal-list"></ul>
+        </div>
+    </div>
+
+    <!-- Including the external JavaScript file for handling form submission and AJAX functionality -->
+    <script src="{{ url_for('static', filename='app.js') }}"></script>
+
+</body>
+</html>
